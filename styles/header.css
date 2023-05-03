@@ -1,0 +1,34 @@
+.cabecalho{
+    background-color: var(--cor-branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.cabecalho__menu{
+    width: 24px;
+    height: 24px;
+    background-image: url(../assets/Menu.svg);
+    display: inline-block;
+}
+
+.conteiner{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 10px;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+
+    background-color: var(--cor-branco);
+    padding: 30px;
+}
+
+.conteiner__botao:checked ~ .lista-menu{
+    display: block;
+}
