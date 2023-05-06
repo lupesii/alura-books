@@ -1,0 +1,72 @@
+.lancamentos__titulo{
+    font: normal 700 1.1rem var(--font-padrao);
+    color: var(--cor-laranja);
+    background-color: var(--cor-branco);
+    text-align: center;
+    text-transform: uppercase;
+
+    padding: 1rem 0 0.5rem 0;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    display: none;
+}
+
+.swiper-pagination{
+    position: initial;
+    padding: 0.5rem 0;
+}
+
+.card{
+    background-color: var(--cor-branco);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.card__descricao{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.card__titulo2{
+    font: normal 700 1rem var(--font-padrao);
+    color: var(--cor-laranja);
+}
+
+.card__titulo{
+    font: normal 700 1.15rem var(--font-padrao);
+    color: var(--cor-fundo-header);
+}
+
+.card__texto{
+    font: normal 400 0.8rem var(--font-padrao);
+    color: var(--cor-preto);
+}
+
+.card__botao{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.botao__link{
+    background-color: var(--cor-laranja);
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor-branco);
+    padding: 1rem 2.3rem;
+}
