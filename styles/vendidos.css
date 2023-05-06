@@ -1,0 +1,9 @@
+.vendidos__titulo{
+    font: normal 700 1.1rem var(--font-padrao);
+    color: var(--cor-laranja);
+    background-color: var(--cor-branco);
+    text-align: center;
+    text-transform: uppercase;
+
+    padding: 1rem 0 0.5rem 0;
+}
