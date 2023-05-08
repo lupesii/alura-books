@@ -49,7 +49,7 @@
 
 .card__texto{
     font: normal 400 0.8rem var(--font-padrao);
-    color: var(--cor-preto);
+    color: var(--cor-preta);
 }
 
 .card__botao{
