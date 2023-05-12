@@ -40,7 +40,7 @@
     display: none;
     position: absolute;
     top: 100%;
-    width: 60vw;
+    margin-left: 1rem
 }
 
 .lista-menu__titulo{
@@ -98,6 +98,7 @@
 
     .opcoes__item{
         padding: 2em 1em;
+        margin-left: 1rem;
     }
 
     .opcoes__item,
