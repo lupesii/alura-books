@@ -24,21 +24,23 @@
     padding: 1rem;
 }
 
-.conteiner__botao{
-    display: none;   
-}
-
 .conteiner__botao:checked ~ .lista-menu{
     display: block;
 }
 
-.lista-menu{
+.conteiner__botao:checked ~ .menu__interage > .cabecalho__menu{
+    background-image: url(../assets/Menu\ Aberto.svg);
+}
+
+.conteiner__botao:checked ~ .menu__interage{
+    background: var(--azul-degrade);
+}
+
+.lista-menu {
     display: none;
     position: absolute;
     top: 100%;
-
-    background-color: var(--cor-branco);
-    padding: 1rem;
+    width: 60vw;
 }
 
 .lista-menu__titulo{
@@ -53,6 +55,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-transform: uppercase;
 }
 
 .lista-menu__titulo,
@@ -61,13 +64,13 @@
     background-color: var(--cor-branco);
 }
 
-.cabecalho__titulo{
+.cabecalho__titulo,
+.conteiner__texto,
+.opcoes, 
+.conteiner__botao{
     display: none;
 }
 
-.opcoes{
-    display: none;
-}
 
 @media screen and (min-width:1024px) {
 
@@ -77,7 +80,6 @@
 
     .cabecalho__titulo{
         font: normal 400  1.8rem var(--font-secundaria);
-        text-align: center;
         display: block;
     }
     
@@ -87,16 +89,20 @@
 
     .opcoes{
         display: flex;
-        justify-content: space-between;
+    }
+
+    .opcoes__botao:checked ~ .opcoes__interage > .opcoes__item{
+        background: var(--azul-degrade);
+        color: var(--cor-branco);
+    }
+
+    .opcoes__item{
+        padding: 2em 1em;
     }
 
     .opcoes__item,
     .opcoes__link{
         font: normal 400 1rem var(--font-padrao);
-    }
-
-    .opcoes__item{
-        padding: 0 1rem;
     }
 
     .opcoes__link{
@@ -114,5 +120,34 @@
 
     .opcoes__botao:checked ~ .lista-menu{
         display: block;
+    }
+
+    .lista-menu__itens:hover{
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__itens:hover > .lista-menu__link{
+        -webkit-text-fill-color: var(--cor-branco);
+    }
+}
+
+@media screen and (min-width:1728px) {
+    .container__opcoes{
+        margin-right: auto;
+    }
+
+    .conteiner__link{
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+        text-decoration: none;
+    }
+
+    .conteiner__texto{
+        display: block;
+    }
+    
+    .cabeçalho {
+        padding: 0 2em;
     }
 }

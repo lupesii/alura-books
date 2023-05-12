@@ -99,3 +99,39 @@
         margin: 2rem auto;
     }
 }
+
+@media screen and (min-width:1724px) {
+    .conteiner__carrosel{
+        display: flex;
+        align-items: center;
+        margin: 0 20vw 5rem 20vw;
+    }
+
+    .swiper-pagination{
+        padding: 1rem 0;
+    }
+
+    .swiper{
+        width: 50%;
+    }
+
+    .swiper-slide img{
+        width: 99%;
+    }
+
+    .card{
+        width: 60%;
+        margin-left: 3.5rem;
+    }
+
+    .card__titulo2{
+        font: normal 700 1.5rem var(--font-padrao);
+        color: var(--cor-laranja);
+    }
+    
+    .card__texto{
+        font: normal 400 1rem var(--font-padrao);
+        color: var(--cor-preta);
+    }
+
+}
